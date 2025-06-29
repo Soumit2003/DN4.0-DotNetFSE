@@ -1,0 +1,5 @@
+C:\Users\KIIT\Desktop\Cogni\week2\NUnit and Moq\CalculatorTests\obj\Debug\net7.0\CalculatorTests.csproj.AssemblyReference.cache
+C:\Users\KIIT\Desktop\Cogni\week2\NUnit and Moq\CalculatorTests\obj\Debug\net7.0\CalculatorTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KIIT\Desktop\Cogni\week2\NUnit and Moq\CalculatorTests\obj\Debug\net7.0\CalculatorTests.AssemblyInfoInputs.cache
+C:\Users\KIIT\Desktop\Cogni\week2\NUnit and Moq\CalculatorTests\obj\Debug\net7.0\CalculatorTests.AssemblyInfo.cs
+C:\Users\KIIT\Desktop\Cogni\week2\NUnit and Moq\CalculatorTests\obj\Debug\net7.0\CalculatorTests.csproj.CoreCompileInputs.cache
