@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "t6vwYO7uU9yXQ8Bgyf//R9wVzHTHeS87mCMf7t8wepUSrl/c6jwFuycikODnD8KOeprhF+LmtkfopXtJMP7krg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\KIIT\\Desktop\\Cogni\\week4\\Experiment2\\Experiment2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KIIT\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
+    "C:\\Users\\KIIT\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\KIIT\\.nuget\\packages\\swashbuckle.aspnetcore\\9.0.3\\swashbuckle.aspnetcore.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
