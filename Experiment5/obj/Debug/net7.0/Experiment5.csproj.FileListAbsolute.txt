@@ -25,6 +25,7 @@ C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\obj\Debug\net7.0\staticwebassets.p
 C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\obj\Debug\net7.0\scopedcss\bundle\Experiment5.styles.css
+C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\obj\Debug\net7.0\Experiment5.csproj.CopyComplete
 C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\obj\Debug\net7.0\Experiment5.dll
 C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\obj\Debug\net7.0\refint\Experiment5.dll
 C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\obj\Debug\net7.0\Experiment5.pdb
@@ -38,4 +39,3 @@ C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\bin\Debug\net7.0\Microsoft.Identit
 C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\KIIT\Desktop\Cogni\week4\Experiment5\obj\Debug\net7.0\Experiment5.csproj.CopyComplete

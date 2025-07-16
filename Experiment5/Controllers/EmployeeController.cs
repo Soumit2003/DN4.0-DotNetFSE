@@ -4,36 +4,43 @@ using Experiment5.Models;
 
 namespace Experiment5.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
-    [Authorize(Roles = "Admin,POC")]
+    [ApiController]
+    [Authorize(Roles = "Admin")] 
     public class EmployeeController : ControllerBase
     {
-        private List<Employee> _employees;
+        private readonly List<Employee> _employees;
 
         public EmployeeController()
         {
-            _employees = new List<Employee>
+            _employees = GetStandardEmployeeList();
+        }
+
+        private List<Employee> GetStandardEmployeeList()
+        {
+            return new List<Employee>
             {
                 new Employee
                 {
                     Id = 1,
-                    Name = "Soumit",
+                    Name = "Soumit Roy",
                     Salary = 50000,
                     Permanent = true,
-                    Department = new Department { Id = 101, Name = "Engineering" },
+                    Department = new Department { Id = 1, Name = "Engineering" },
                     Skills = new List<Skill>
                     {
                         new Skill { Id = 1, Name = "C#" },
-                        new Skill { Id = 2, Name = "SQL" }
+                        new Skill { Id = 2, Name = "ASP.NET" }
                     },
-                    DateOfBirth = new DateTime(2000, 5, 1)
+                    DateOfBirth = new DateTime(1999, 1, 1)
                 }
             };
         }
 
         [HttpGet]
-        public IActionResult Get()
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public ActionResult<List<Employee>> Get()
         {
             return Ok(_employees);
         }

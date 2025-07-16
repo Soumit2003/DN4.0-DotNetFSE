@@ -1,27 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.AspNetCore.Authorization;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
 namespace Experiment5.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     [AllowAnonymous]
     public class AuthController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("token")]
         public IActionResult GetToken()
         {
             var token = GenerateJSONWebToken(1, "Admin"); 
-            return Ok(new { token });
+            return Ok(new { Token = token });
         }
 
         private string GenerateJSONWebToken(int userId, string userRole)
         {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("mysuperdupersecretmysuperdupersecret"));
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("mysuperdupersecret"));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             var claims = new List<Claim>
@@ -35,7 +35,8 @@ namespace Experiment5.Controllers
                 audience: "myUsers",
                 claims: claims,
                 expires: DateTime.Now.AddMinutes(10), 
-                signingCredentials: credentials);
+                signingCredentials: credentials
+            );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
